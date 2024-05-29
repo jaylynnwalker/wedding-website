@@ -21,7 +21,7 @@
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-    top: 0;
+    top: 0; 
     z-index: 999;
 }
 
@@ -103,7 +103,7 @@
 
 /* Controls the style when you hover over the navigation bar*/
 .navbar__links:hover {
-    color: #9518fc;
+    color: #EBA83A;
     transition: all 0.3s ease;
 }
 
@@ -273,7 +273,7 @@
 
 /*  Updates the page the user is on in the navigation bar when scrolling */
 .highlight {
-    border-bottom: 4px solid rgb(132, 0, 255);
+    border-bottom: 4px solid #;
 }
 
 @media screen and (max-width: 768px) {
@@ -290,7 +290,7 @@
     }
 }
 
-/*  ABOUT SECTION ***************************************************************************************************/
+/*  OUR STORY SECTION ***************************************************************************************************/
 .main {
     /* background-color: #131313; */
     background: #333333;  /* fallback for old browsers */
@@ -482,8 +482,44 @@
         margin: 2.5rem 0;
     }
 }
+/*  ITINERARY SECTION *****************************************************************************************************************************/
+.itinerary {
+    /* background: #131313;
+    background: linear-gradient(to right, #161616, #131313); */
+    background-image: url(images/proposal-136.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    /* opacity: 0.7;  */
+    padding: 200px 0;
+}
 
-/*  Travel Section */
+
+.itinerary__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.itinerary img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    opacity: 1;
+}
+
+
+
+/*  TRAVEL SECTION *******************************************************************************************************************************/
 .travel {
     background: #131313;
     display: flex;
@@ -573,6 +609,7 @@
     cursor: pointer;
 }
 
+/*  Mobile Responsiveness */
 /*  Changes the number of columns depending on the user's screen size */
 @media screen and (max-width: 1300px) {
     .travel__wrapper {
@@ -586,7 +623,8 @@
     }
 }
 
-/*  Footer Section */
+
+/*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
     background-color: #131313;
     padding: 5rem 0;
@@ -670,8 +708,9 @@
 
 .website__rights {
     color: black;
-} */
+} 
 
+/*  Mobile Responsiveness for Footer Section */
 @media screen and (max-width: 820px) {
     .footer__links {
         padding-top: 2rem;
