@@ -2,15 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
 
-/* red: 91171F */
-/* dark red: 421820 */
-/* white: F8F4F9 */
-/* gold: EBA83A */
+
 
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
@@ -38,7 +35,7 @@
 
 /* Logo styling */
 #navbar__logo {
-    background-color: #ff8177;
+    background-color: #EBA83A;
     background-image: linear-gradient(to top #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -95,8 +92,8 @@
     outline: none;
     border-radius: 4px;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to top, #F8F4F9, #421820);
+    background: linear-gradient(to top, #F8F4F9, #421820);
     color: white;
     transition: all 0.3s ease;
 }
@@ -206,6 +203,18 @@
 }
 
 /*  HERO SECTION **************************************************************************************************** */
+/*.hero {
+    /* background: #131313;
+    background: linear-gradient(to right, #161616, #131313); 
+    background-image: url(images/proposal-52.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7; 
+    padding: 200px 0;
+}*/
+
 .hero {
     /* background: #131313;
     background: linear-gradient(to right, #161616, #131313); */
@@ -214,7 +223,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.7; 
+    background-color: rgba(255, 255, 255, 0.3);
+    background-blend-mode: lighten;
     padding: 200px 0;
 }
 
@@ -233,10 +243,11 @@
 .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: white;
+    color: #F8F4F9;
+    -webkit-text-stroke: 2px #421820 ;
 }
 
-.hero__heading span {
+/* .hero__heading span {
     background: #1f4037; 
     background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
     background: linear-gradient(to right, #99f2c8, #1f4037); 
@@ -245,14 +256,15 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-}
+} */
 
 .hero__details1 {
     font-size: 60px;
-    background: #1f4037; 
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
-    background: linear-gradient(to right, #99f2c8, #1f4037); 
+    background: #421820; 
+    /* background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);  */
     background-size: 100%;
+    font-family: 'Papyrus', sans-serif;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -260,11 +272,12 @@
 }
 
 .hero__details2 {
-    font-size: 40px;
-    background: #1f4037; 
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
-    background: linear-gradient(to right, #99f2c8, #1f4037); 
+    font-size: 50px;
+    background: #421820; 
+    /* background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);  */
     background-size: 100%;
+    font-family: 'Papyrus', sans-serif;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -273,7 +286,7 @@
 
 /*  Updates the page the user is on in the navigation bar when scrolling */
 .highlight {
-    border-bottom: 4px solid #;
+    border-bottom: 4px solid #EBA83A 
 }
 
 @media screen and (max-width: 768px) {
@@ -293,9 +306,9 @@
 /*  OUR STORY SECTION ***************************************************************************************************/
 .main {
     /* background-color: #131313; */
-    background: #333333;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #333333;  
+    background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+    background: linear-gradient(to right, #dd1818, #333333); 
     padding: 10rem 0;
 }
 
@@ -348,20 +361,6 @@
     font-weight: 700;
 }
 
-.main__btn {
-    font-size: 1.8rem;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    padding: 20px 60px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
 
 .main__btn a {
     position: relative;
