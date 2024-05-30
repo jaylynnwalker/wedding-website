@@ -486,7 +486,7 @@
 .itinerary {
     /* background: #131313;
     background: linear-gradient(to right, #161616, #131313); */
-    background-image: url(images/proposal-136.jpg);
+    background-image: url(images/proposal-102.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,7 +496,6 @@
     /* opacity: 0.7;  */
     padding: 200px 0;
 }
-
 
 .itinerary__container {
     display: flex;

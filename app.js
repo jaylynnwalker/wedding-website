@@ -15,27 +15,49 @@ menu.addEventListener('click', mobileMenu);
 const highlightMenu = () => {
     const elem = document.querySelector('.highlight')
     const homeMenu = document.querySelector('#home-page')
-    const aboutMenu = document.querySelector('#about-page')
+    const ourStoryMenu = document.querySelector('#ourStory-page')
+    const itineraryMenu = document.querySelector('#itinerary-page')
     const travelMenu = document.querySelector('#travel-page')
+    const eventsMenu = document.querySelector('#events-page')
+    const faqMenu = document.querySelector('#faq-page')
     let scrollPos = window.scrollY // Scroll position
-
+    // console.log(scrollPos)
     // Adds the 'highlight' class to the menu items
-    if(window.innerWidth > 960 && scrollPos < 600) { // only want the highlight feature to show on desktop view
+    if(window.innerWidth > 960 && scrollPos < 200) { // only want the highlight feature to show on desktop view
         homeMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
+        ourStoryMenu.classList.remove('highlight')
         return
-    }   else if (window.innerWidth > 960 && scrollPos < 1400) {
-        aboutMenu.classList.add('highlight')
+        // for the Our Story page
+    }   else if (window.innerWidth > 960 && scrollPos < 840) {
+        ourStoryMenu.classList.add('highlight')
         homeMenu.classList.remove('highlight')
+        itineraryMenu.classList.remove('highlight')
+        return
+        // for the Itinerary page
+    }   else if (window.innerWidth > 960 && scrollPos < 2800) {
+        itineraryMenu.classList.add('highlight')
+        ourStoryMenu.classList.remove('highlight')
         travelMenu.classList.remove('highlight')
         return
-    }   else if (window.innerWidth > 960 && scrollPos < 2345) {
+        // for the Travel page
+    }   else if (window.innerWidth > 960 && scrollPos < 4100) {
         travelMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
+        eventsMenu.classList.remove('highlight')
+        itineraryMenu.classList.remove('highlight')
+        return
+        // for the Event Guide page
+    }   else if (window.innerWidth > 960 && scrollPos < 4500) {
+        eventsMenu.classList.add('highlight')
+        travelMenu.classList.remove('highlight')
+        faqMenu.classList.remove('highlight')
+        return
+        // for the FAQ page
+    }   else if (window.innerWidth > 960 && scrollPos < 4900) {
+        faqMenu.classList.add('highlight')
+        eventsMenu.classList.remove('highlight')
         return
     }
-
-    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+    if((elem && window.innerWidth < 960 && scrollPos < 200) || elem) {
         elem.classList.remove('highlight')
     }
 }
