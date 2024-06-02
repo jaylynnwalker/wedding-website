@@ -236,16 +236,6 @@
     -webkit-text-stroke: 2px #421820 ;
 }
 
-/* .hero__heading span {
-    background: #1f4037; 
-    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
-    background: linear-gradient(to right, #99f2c8, #1f4037); 
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-} */
 
 .hero__details1 {
     font-size: 60px;
@@ -385,6 +375,7 @@
 .events__btn {
     display: flex;
     justify-content: center;
+    text-decoration: none;
     margin-top: 16px;
 }
 
