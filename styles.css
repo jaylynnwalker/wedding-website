@@ -94,7 +94,7 @@
     background: #F8F4F9;
     /* background: -webkit-linear-gradient(to top, #F8F4F9, #421820);
     background: linear-gradient(to top, #F8F4F9, #421820); */
-    color: white;
+    color: #421820;
     transition: all 0.3s ease;
 }
 
@@ -166,7 +166,7 @@
         padding-bottom: 2rem;
     }
 
-    .button {
+    /* .button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,7 +174,7 @@
         height: 80px;
         margin: 0;
         text-decoration: none;
-    }
+    } */
 
     #mobile-menu {
         position: absolute;
