@@ -91,9 +91,9 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #833ab4;
-    background: -webkit-linear-gradient(to top, #F8F4F9, #421820);
-    background: linear-gradient(to top, #F8F4F9, #421820);
+    background: #F8F4F9;
+    /* background: -webkit-linear-gradient(to top, #F8F4F9, #421820);
+    background: linear-gradient(to top, #F8F4F9, #421820); */
     color: white;
     transition: all 0.3s ease;
 }
@@ -239,7 +239,6 @@
 }
 
 .hero button {
-    text-decoration: none;
     color: #421820;
     padding: 14px 24px;
     border: none;
@@ -248,6 +247,7 @@
     background: #F8F4F9;
     font-size: 2.5rem;
 }
+
 /* .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
@@ -393,11 +393,19 @@
     opacity: 1;
 }
 
-.events__btn {
+.itinerary button {
     display: flex;
     justify-content: center;
     text-decoration: none;
     margin-top: 16px;
+    text-decoration: none;
+    color: #421820;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #F8F4F9;
+    font-size: 2rem;
 }
 
 
