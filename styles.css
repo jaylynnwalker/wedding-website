@@ -515,6 +515,73 @@
     }
 }
 
+/* FAQ SECTION **************************************************************************************** */
+.faq {
+    background-image: url(images/proposal-62.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: lighten;
+    padding: 200px 0;
+    font-size: 1.2rem;
+}
+
+.faq__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    opacity: 1;
+}
+
+.faq__content {
+    margin: 20px 0;
+    border: 3px solid #421820;
+}
+
+.faq__content input {
+    display: none;
+}
+
+.faq__content label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #421820;
+    font-size: 2rem;
+    color: #F8F4F9;
+}
+
+.faq__content label:hover {
+    background-color: #EBA83A ;
+}
+
+.faq__content input:checked + label {
+    background-color: #EBA83A ;
+}
+
+.answer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    padding: 0 15px;
+    background-color: #F8F4F9;
+}
+
+.answer p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.faq__content input:checked ~ .answer {
+    max-height: 1000px;
+}
 
 /*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
