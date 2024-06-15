@@ -87,7 +87,7 @@
     text-decoration: none;
     padding: 10px 20px;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -226,13 +226,14 @@
 }
 
 .hero button {
+    display: flex;
     color: #421820;
-    padding: 14px 24px;
+    padding: 2px 10px;
     border: none;
     outline: none;
     border-radius: 4px;
     background: #F8F4F9;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -391,12 +392,12 @@
     margin-top: 16px;
     text-decoration: none;
     color: #421820;
-    padding: 14px 24px;
+    padding: 2px 10px;
     border: none;
     outline: none;
     border-radius: 4px;
     background: #F8F4F9;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -432,47 +433,48 @@
 
 .travel__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
 }
 
 .travel__card {
-    margin: 10px;
-    height: 425px;
-    width: 300px;
+    margin: 20px;
+    height: 250px;
+    width: 450px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #F8F4F9;
-    background-image: linear-gradient(to right, #EBA83A  0%, #F8F4F9 100%);
+    background-color: #EBA83A;
+    /* background-image: linear-gradient(to right, #EBA83A  0%, #F8F4F9 100%); */
     transition: 0.3s ease-in;
 }
 
-.travel__card:nth-child(2) {
+/* .travel__card:nth-child(2) {
     background: #EBA83A ;
-    background: -webkit-linear-gradient(to right, #F8F4F9, #91171F); 
+    /* background: -webkit-linear-gradient(to right, #F8F4F9, #91171F); 
     background: linear-gradient(to right, #F8F4F9, #91171F); 
 }
 
 .travel__card:nth-child(3) {
     background: #EBA83A ;  
-    background: -webkit-linear-gradient(to right, #91171F, #EBA83A ); 
+    /* background: -webkit-linear-gradient(to right, #91171F, #EBA83A ); 
     background: linear-gradient(to right, #91171F, #EBA83A ); 
-}
+} */
 
 .travel__card h2 {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
     /* font: 800 40px Arial; */
     -webkit-text-fill-color: #F8F4F9;
-    -webkit-text-stroke: 2px #421820;
+    -webkit-text-stroke: 1px #421820;
 }
 
 .travel__card p {
     text-align: center;
-    margin-top: 24px;
-    font-size: 20px;
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 .travel__btn {
@@ -482,12 +484,12 @@
 }
 
 .travel__card button {
-    color: white;
+    color: #421820;
     padding: 14px 24px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #421820;
+    background: #F8F4F9;
     font-size: 1rem;
 }
 
