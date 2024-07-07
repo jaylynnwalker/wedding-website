@@ -1,4 +1,4 @@
 red: 91171F
 dark red: 421820
 white: F8F4F9
-gold: EBA83A 
+gold: EBA83A, BF9B30 

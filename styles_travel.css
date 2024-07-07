@@ -98,110 +98,6 @@
     transition: all 0.3s ease;
 }
 
-/* Controls the style when you hover over the navigation bar*/
-.navbar__links:hover {
-    color: #EBA83A;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 960px) {
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbar__menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute; /* needed to use top in the next line */
-        top: -1000px; /* to bring the menu down when you hover over the hamburger */
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: -1;
-    }
-
-    .navbar__menu.active {
-        background: black;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 60vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    /* creates the hamburger menu when in mobile view*/
-    .navbar__toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: white;
-    }
-
-    .navbar__item {
-        width: 100%
-    }
-
-    /* location of the menu links for mobile view*/
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    /* .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-        text-decoration: none;
-    } */
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    /* actual hamburger menu icon */
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-    /* animation when the menu button is activated >>> turns hamburger into X */
-    #mobile-menu.is-active .bar:nth-child(2) { /* referring to the bottom line of the hamburger*/
-        opacity: 0; 
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) { /* referring to the top line of the hamburger*/
-        transform: translateY(8px) rotate(45deg); 
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) { /* referring to the top line of the hamburger*/
-        transform: translateY(-8px) rotate(-45deg); 
-    }
-}
 
 /*  HEADER SECTION ********************************************************************* */
 .video-container {
@@ -228,16 +124,16 @@
   }
 
 
-/*  CHECKLIST SECTION **************************************************************************************************** */
+/*  DOCUMENTS SECTION **************************************************************************************************** */
 
-.checklist {
+.documents {
     background: #421820;  
     background: -webkit-linear-gradient(to bottom, #91171F, #421820);  
     background: linear-gradient(to bottom, #91171F, #421820); 
     padding: 10rem 0;
 }
 
-.checklist__container {
+.documents__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,7 +145,7 @@
     padding: 30px;
 }
 
-.checklist img {
+.documents img {
     max-width: 100%;
     height: auto;
     width: auto\9;
@@ -257,7 +153,7 @@
     opacity: 1;
 }
 
-.checklist button {
+.documents button {
     color: #421820;
     padding: 10px 20px;
     border: none;
@@ -266,3 +162,25 @@
     background: #F8F4F9;
     font-size: 2rem;
 }
+
+/*  SUGGESTED ROUTE SECTION **************************************************************************************************** */
+
+
+
+
+
+/*  POTENTIAL ITINERARY SECTION **************************************************************************************************** */
+
+
+
+
+
+/*  TIPS SECTION **************************************************************************************************** */
+
+
+
+
+/*  UPON ARRIVAL SECTION **************************************************************************************************** */
+
+
+

@@ -243,18 +243,11 @@
 }
 
 /* @media screen and (max-width: 768px) {
-    .hero__heading{
-        font-size: 60px;
+    .hero {
+        display: flex;
     }
 
-    .hero__details1 {
-        font-size: 40px;
-    }
-
-    .hero__details2 {
-        font-size: 40px;
-    }
-} */
+}  */
 
 /*  OUR STORY SECTION ***************************************************************************************************/
 .main {
