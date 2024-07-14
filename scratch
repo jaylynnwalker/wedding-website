@@ -1,0 +1,273 @@
+.navbar {
+    background: #B81822;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+    position: sticky;
+    top: 10; 
+    z-index: 999; /* Makes sure the nav bar is above all other content */
+}
+
+.navbar__container {
+    display: flex; 
+    justify-content: space-between; 
+    height: 40px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto; /* top, bottom, left, right*/
+    padding: 0 10px;
+}
+
+/* Logo styling */
+#navbar__logo {
+    background-color: #BF9B30;
+    background-image: linear-gradient(to top #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.navbar__toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #F8F4F9;
+    margin: 4px 0;
+}
+
+/* Navigation bar menu */
+.navbar__menu {
+    /* display: flex;
+    align-items: center;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease; */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #BF9B30;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.navbar__item {
+    /* height: 80px; */
+}
+
+/* Navigation link formatting */
+.navbar__links {
+    color: #F8F4F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    /* width: ; */
+    text-decoration: none;
+    /* height: 10%; */
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+
+}
+
+/* Controls the style when you hover over the navigation bar*/
+.navbar__links:hover {
+    color: #EBA83A;
+    transition: color 0.3s ease;
+}
+
+/* .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    /* max-width: 1300px;
+    padding: 0;
+} */
+
+/* .navbar__menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute; /*needed to use top in the next line*/
+    top: -1000px; /*to bring the menu down when you hover over the hamburger 
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: -1;
+} */
+
+.navbar__menu.active {
+    /* background: #BF9B30; */
+    /* display: flex; */
+    /* top: 100%; */
+    /* opacity: 1; */
+    /* transition: all 0.5s ease; */
+    /* z-index: 99; */
+    /* height: 100vh; */
+    /* font-size: 1.6rem; */
+    /* overflow-y: auto; */
+}
+
+/* #navbar__logo {
+    padding-left: 25px;
+} */
+
+/* creates the hamburger menu when in mobile view*/
+/* .navbar__toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+} */
+
+.navbar__item {
+    /* width: 100%; */
+    margin: 1rem 0;
+}
+
+/* location of the menu links for mobile view*/
+.navbar__links {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    /* display: table; */
+    display: block;
+}
+
+.navbar__btn {
+    padding-bottom: 2rem;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+
+/* actual hamburger menu icon */
+.navbar__toggle .bar {
+    display: block;
+    cursor: pointer;
+}
+
+/* animation when the menu button is activated >>> turns hamburger into X */
+#mobile-menu.is-active .bar:nth-child(2) { /* referring to the bottom line of the hamburger*/
+    opacity: 0; 
+}
+
+#mobile-menu.is-active .bar:nth-child(1) { /* referring to the top line of the hamburger*/
+    transform: translateY(8px) rotate(45deg); 
+}
+
+#mobile-menu.is-active .bar:nth-child(3) { /* referring to the top line of the hamburger*/
+    transform: translateY(-8px) rotate(-45deg); 
+}
+
+/* Media Responsiveness ****************************************************************************/
+@media only screen and (min-width: 768px) {
+    .navbar {
+        height: 50px;
+    }
+    
+    .navbar__container {
+        height: 50px;
+    }
+    
+    /* Logo styling */
+    #navbar__logo {
+
+    }
+    .navbar img {
+
+    }
+    
+    /* Navigation bar menu */
+    .navbar__menu {
+
+    }
+    
+    .navbar__item {
+ 
+    }
+    
+    /* Navigation link formatting */
+    .navbar__links {
+
+    }
+    
+    .navbar__btn {
+
+    }
+    
+    .button {
+
+    }
+
+} 
+
+@media only screen and (min-width: 1000px) {
+    .navbar {
+        height: 100px;
+    }
+    
+    .navbar__container {
+
+    }
+    
+    /* Logo styling */
+    #navbar__logo {
+
+    }
+    .navbar img {
+
+    }
+    
+    /* Navigation bar menu */
+    .navbar__menu {
+
+    }
+    
+    .navbar__item {
+ 
+    }
+    
+    /* Navigation link formatting */
+    .navbar__links {
+
+    }
+    
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    
+} 
