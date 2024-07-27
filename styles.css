@@ -34,7 +34,7 @@
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
     background: #B81822;
-    height: 40px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +67,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 1.5rem;
-    padding-left: 2px;
+    padding-left: 10px;
 }
 
 .navbar__menu {
@@ -135,7 +135,7 @@
 
 #mobile-menu {
     position: absolute;
-    top: 0%;
+    top: 1%;
     right: 5%;
     transform: translate(5%, 20%);
 } 
@@ -169,6 +169,7 @@
 
     #navbar__logo {
         font-size: 3rem;
+        padding-left: 20px;
     }
 
     .navbar__menu {
@@ -199,6 +200,13 @@
         padding: 0 1rem;
         width: 100%;
     }
+
+    .navbar__toggle .bar {
+        width: 50px;
+        height: 6px;
+        margin: 10px auto;
+    }
+
 }
 
 
@@ -225,7 +233,7 @@
     /* margin: 0 auto;   */
     /* height: 90%; */
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .hero img {
@@ -255,7 +263,7 @@
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
     .hero {
-        padding: 30px;
+        padding: 50px;
     }
 
     .hero button {
@@ -348,8 +356,6 @@
 
 /*  ITINERARY SECTION *****************************************************************************************************************************/
 .itinerary {
-    /* background: #131313;
-    background: linear-gradient(to right, #161616, #131313); */
     background-image: url(images/proposal-102.jpg);
     background-size: cover;
     background-position: center;
@@ -358,7 +364,7 @@
     background-color: rgba(255, 255, 255, 0.6);
     background-blend-mode: lighten;
     /* opacity: 0.7;  */
-    padding: 200px 0;
+    padding: 3rem 0;
     font-size: 1.2rem;
 }
 
@@ -515,19 +521,25 @@
     cursor: pointer;
 }
 
-/*  Mobile Responsiveness */
-/*  Changes the number of columns depending on the user's screen size */
-@media screen and (max-width: 1300px) {
-    .travel__wrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .travel__wrapper {
-        grid-template-columns: 1fr;
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+    .itinerary button {
+        font-size: 1.5rem;
     }
-}
+        
+} 
+        
+    @media only screen and (min-width: 1000px) {
+        
+    .travel__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }
+        
+} 
 
 /* FAQ SECTION **************************************************************************************** */
 .faq {
