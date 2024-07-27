@@ -212,7 +212,7 @@
     /* background-attachment: fixed; */
     background-color: rgba(255, 255, 255, 0.3);
     background-blend-mode: lighten;
-    /* padding: 200px 0; */
+    padding: 20px 0;
 }
 
 .hero__container {
@@ -255,7 +255,7 @@
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
     .hero {
-        padding: 50px;
+        padding: 30px;
     }
 
     .hero button {
@@ -285,9 +285,9 @@
 .main {
     /* background-color: #131313; */
     background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #91171F, #421820);  
-    background: linear-gradient(to bottom, #91171F, #421820); 
-    padding: 10rem 0;
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 5rem 0;
 }
 
 .main__container {
@@ -295,12 +295,9 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 90%;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px;
-    
 } 
 
 .main img {
@@ -322,7 +319,7 @@
   /* Create four equal columns that sits next to each other */
   .column {
     flex: 25%;
-    max-width: 25%;
+    max-width: 50%;
     padding: 0 4px;
   }
   
@@ -331,50 +328,24 @@
     vertical-align: middle;
     width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
-/*  Mobile Responsiveness */
-@media screen and (max-width: 1100px) {
-    /* .main__container {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90%;
-    } */
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
 
-    /* .main__img--container {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-    } */
+.main {
+    padding: 10rem 0;
 }
 
+} 
 
+@media only screen and (min-width: 1000px) {
 
-@media screen and (max-width: 480px) {
-    .main {
-        display: flex;
-    }
-
-    /* Adjust size of icons or pictures here at 1:13:00 minute in the video*/
-
+.main {
+    padding: 15rem 0;
 }
+
+} 
+
 /*  ITINERARY SECTION *****************************************************************************************************************************/
 .itinerary {
     /* background: #131313;
@@ -422,9 +393,25 @@
     outline: none;
     border-radius: 4px;
     background: #F8F4F9;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
 }
 
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+.itinerary button {
+    font-size: 1.5rem;
+}
+    
+} 
+    
+@media only screen and (min-width: 1000px) {
+    
+.itinerary button {
+    font-size: 2.5rem;
+}
+    
+} 
 
 /*  TRAVEL SECTION *******************************************************************************************************************************/
 .travel {
