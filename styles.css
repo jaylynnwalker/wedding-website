@@ -405,29 +405,28 @@
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
 
-.itinerary button {
-    font-size: 1.5rem;
-}
+    .itinerary button {
+        font-size: 1.5rem;
+    }
     
 } 
     
 @media only screen and (min-width: 1000px) {
     
-.itinerary button {
-    font-size: 2.5rem;
-}
+    .itinerary {
+        padding: 15rem 0;
+    }
+
+    .itinerary button {
+        font-size: 2.5rem;
+    }
     
 } 
 
 /*  TRAVEL SECTION *******************************************************************************************************************************/
 .travel {
     background: #421820;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .travel__container {
@@ -435,64 +434,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
+    max-width: 1300px;
+    margin: 0 auto; 
     height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 100%;
 } 
 
 .travel img {
     max-width: 100%;
     height: auto;
     width: auto\9;
+    justify-content: center;
     opacity: 1;
 }
 
 .travel__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
 }
 
 .travel__card {
-    margin: 20px;
-    height: 250px;
-    width: 450px;
-    border-radius: 4px;
+    margin: 10px;
+    height: 175px;
+    width: 325px;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #F8F4F9;
-    background-color: #EBA83A;
-    /* background-image: linear-gradient(to right, #EBA83A  0%, #F8F4F9 100%); */
+    background-color: #BF9B30;
     transition: 0.3s ease-in;
 }
 
-/* .travel__card:nth-child(2) {
-    background: #EBA83A ;
-    /* background: -webkit-linear-gradient(to right, #F8F4F9, #91171F); 
-    background: linear-gradient(to right, #F8F4F9, #91171F); 
-}
-
-.travel__card:nth-child(3) {
-    background: #EBA83A ;  
-    /* background: -webkit-linear-gradient(to right, #91171F, #EBA83A ); 
-    background: linear-gradient(to right, #91171F, #EBA83A ); 
-} */
-
 .travel__card h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     /* font: 800 40px Arial; */
     -webkit-text-fill-color: #F8F4F9;
-    -webkit-text-stroke: 1px #421820;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #421820;
 }
 
 .travel__card p {
     text-align: center;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 .travel__btn {
@@ -503,7 +490,7 @@
 
 .travel__card button {
     color: #421820;
-    padding: 14px 24px;
+    padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -525,20 +512,40 @@
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
 
-    .itinerary button {
-        font-size: 1.5rem;
-    }
-        
-} 
-        
-    @media only screen and (min-width: 1000px) {
-        
     .travel__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr;
     }
+
+    .travel__card {
+        margin: 15px;
+        height: 200px;
+        width: 325px;
+    }
+} 
+    
+@media only screen and (min-width: 1000px) {
         
+    .travel__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+    }  
+
+    .travel__card {
+        margin: 20px;
+        height: 350px;
+        width: 525px;
+    }
+
+    .travel__card h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        -webkit-text-fill-color: #F8F4F9;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #421820;
+    }
 } 
 
 /* FAQ SECTION **************************************************************************************** */
@@ -550,8 +557,7 @@
     background-attachment: fixed;
     background-color: rgba(255, 255, 255, 0.2);
     background-blend-mode: lighten;
-    padding: 200px 0;
-    font-size: 1.2rem;
+    padding: 5rem 0;
 }
 
 .faq__container {
@@ -567,7 +573,7 @@
 }
 
 .faq__content {
-    margin: 20px 0;
+    margin: 10px 0;
     border: 3px solid #421820;
 }
 
@@ -577,19 +583,19 @@
 
 .faq__content label {
     display: block;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     background-color: #421820;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #F8F4F9;
 }
 
 .faq__content label:hover {
-    background-color: #EBA83A ;
+    background-color: #BF9B30 ;
 }
 
 .faq__content input:checked + label {
-    background-color: #EBA83A ;
+    background-color: #BF9B30 ;
 }
 
 .answer {
@@ -601,17 +607,40 @@
 }
 
 .answer p {
-    margin: 15px 0;
-    font-size: 1.5rem;
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
 .faq__content input:checked ~ .answer {
     max-height: 1000px;
 }
 
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+    .faq__content {
+        margin: 20px 0;
+    }
+
+    .faq__content label {
+        padding: 10px;
+        font-size: 1.25rem;
+    }
+
+} 
+    
+@media only screen and (min-width: 1000px) {
+        
+    .faq__content label {
+        padding: 10px;
+        font-size: 20rem;
+    }
+
+} 
+
 /*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
-    background-color: #91171F;
+    background-color: #B81822;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
@@ -692,7 +721,8 @@
 }
 
 .website__rights {
-    color: black;
+    background-color: #B81822;
+    color: #F8F4F9;
     display: flex;
     justify-content: center;
 } 
