@@ -11,7 +11,7 @@
 
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
-    background: #91171F;
+    background: #B81822;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -130,3 +130,21 @@
     width: 100%;
     opacity: 1;
 }
+
+/*  FOOTER SECTION **************************************************************************************************** */
+
+.footer__container {
+    background-color: #B81822;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.website__rights {
+    background-color: #B81822;
+    color: #F8F4F9;
+    display: flex;
+    justify-content: center;
+} 
