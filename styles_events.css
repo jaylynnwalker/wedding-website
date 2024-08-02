@@ -97,3 +97,139 @@
     color: #421820;
     transition: all 0.3s ease;
 }
+
+/*  PAGE SUMMARY **************************************************************************************************** */
+
+
+
+/*  COOKOUT SECTION **************************************************************************************************** */
+
+.cookout {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
+
+.cookout__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.cookout img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+/*  HALDI SECTION **************************************************************************************************** */
+
+.haldi {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
+
+.haldi__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.haldi img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
+
+.haldi button {
+    color: #421820;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #F8F4F9;
+    font-size: 2rem;
+}
+
+
+
+/*  MEHNDI/GARBA SECTION **************************************************************************************************** */
+.mehndi {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
+
+.mehndi__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.mehndi img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
+
+/*  WEDDING CEREMONY SECTION **************************************************************************************************** */
+.travel-tips {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
+
+.travel-tips__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.travel-tips img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
+
+/*  WHITE PARTY SECTION **************************************************************************************************** */
+
+
+/*  WEDDING CEREMONY SECTION **************************************************************************************************** */
