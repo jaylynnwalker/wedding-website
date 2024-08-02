@@ -581,9 +581,7 @@
     .travel__card h2 {
         text-align: center;
         font-size: 2.5rem;
-        -webkit-text-fill-color: #F8F4F9;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #421820;
+
     }
 } 
 
