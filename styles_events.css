@@ -35,7 +35,7 @@
 
 /* Logo styling */
 #navbar__logo {
-    background-color: #EBA83A;
+    background-color: #BF9B30;
     background-image: linear-gradient(to top #ff0844 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -98,16 +98,16 @@
     transition: all 0.3s ease;
 }
 
-/*  PAGE SUMMARY **************************************************************************************************** */
 
+/*  PAGE SUMMARY **************************************************************************************************** */
 
 
 /*  COOKOUT SECTION **************************************************************************************************** */
 
 .cookout {
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
+    background: #BF9B30;  
+    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820);  */
     padding: 10rem 0;
 }
 
