@@ -254,7 +254,7 @@
     width: 100%;
     /* max-width: 1200px; */
     /* margin: 0 auto;   */
-    /* height: 90%; */
+    height: 90%;
     text-align: center;
     padding: 10px;
 }
@@ -264,6 +264,7 @@
     height: auto;
     width: 100%;
     opacity: 1;
+    /* margin: 0 auto; */
 }
 
 .hero button {
@@ -287,6 +288,7 @@
 @media only screen and (min-width: 768px) {
     .hero {
         padding: 50px;
+        
     }
 
     .hero button {
@@ -300,14 +302,28 @@
 
 @media only screen and (min-width: 1000px) {
     .hero {
-        padding: 100px;
+        /* padding: 100px; */
+        height: 100vh;
+    }
+
+    .hero__container {
+        /* max-height: 100vh; */
+ 
+    }
+
+    .hero img {
+        /* max-width: 100%; */
+        /* max-height: 100vh; */
+        /* height: auto; */
+        /* width: auto; */
+        /* opacity: 1; */
     }
 
     .hero button {
         display: flex;
         color: #421820;
         padding: 20px 50px;
-        font-size: 3rem;
+        font-size: 1rem;
     }
 
 } 
