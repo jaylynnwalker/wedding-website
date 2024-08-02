@@ -11,7 +11,7 @@
 
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
-    background: #91171F;
+    background: #B81822;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
 /* Logo styling */
 #navbar__logo {
     background-color: #EBA83A;
-    background-image: linear-gradient(to top #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top #B81822 0%, #ffb199 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -128,8 +128,8 @@
 
 .documents {
     background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #91171F, #421820);  
-    background: linear-gradient(to bottom, #91171F, #421820); 
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
     padding: 10rem 0;
 }
 
@@ -170,15 +170,70 @@
 
 
 /*  POTENTIAL ITINERARY SECTION **************************************************************************************************** */
+.travel-itinerary {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
 
+.travel-itinerary__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
 
+.travel-itinerary img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
 
-
+.travel-itinerary button {
+    color: #421820;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #F8F4F9;
+    font-size: 2rem;
+}
 
 /*  TIPS SECTION **************************************************************************************************** */
+.travel-tips {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, #B81822, #421820); 
+    padding: 10rem 0;
+}
 
+.travel-tips__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
 
-
+.travel-tips img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
 
 /*  UPON ARRIVAL SECTION **************************************************************************************************** */
 
