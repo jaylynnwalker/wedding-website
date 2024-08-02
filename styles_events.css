@@ -135,9 +135,9 @@
 /*  HALDI SECTION **************************************************************************************************** */
 
 .haldi {
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
+    background: #BF9B30;  
+    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);   */
+    /* background: linear-gradient(to bottom, #B81822, #421820);  */
     padding: 10rem 0;
 }
 
@@ -175,9 +175,9 @@
 
 /*  MEHNDI/GARBA SECTION **************************************************************************************************** */
 .mehndi {
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
+    background: #BF9B30;  
+    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);   */
+    /* background: linear-gradient(to bottom, #B81822, #421820);  */
     padding: 10rem 0;
 }
 
