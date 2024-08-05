@@ -1,4 +1,12 @@
-red: 91171F, B81822
+red: 91171F, B81822, 
 dark red: 421820
 white: F8F4F9
 gold: EBA83A, BF9B30 
+
+red: C40C0C, FF6500, FF8A08, FFC100
+
+blue: 219C90 
+yellow: E9B824 
+orange: EE9322 
+red: D83F31
+maroon: 822E3E, #8B162F

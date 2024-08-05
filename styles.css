@@ -21,8 +21,8 @@
     border: none;
     outline: none;
     border-radius: 40px;
-    background: #F8F4F9;
-    color: #421820;
+    /* background: #F8F4F9; */
+    /* color: #421820; */
     transition: all 0.3s ease;
 }
 
@@ -31,9 +31,28 @@
     transition: all 0.3s ease;
 }
 
+:root {
+    /* Main Colors */
+    --orange-gold: #E39102;
+    --burnt-orange: #99381F;
+    --red: #930102;
+    --dark-blue: #004177;
+    --light-blue: #4E94AB;
+
+    /* Accent Blues */
+    --navy-teal: #20576E;
+    --greenish-blue: #599F90;
+
+    /* Accent Golds */
+    --orange: #EE9322;
+    --gold: #E9B824;
+
+    --white: #F8F4F9;
+}
+
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
-    background: #B81822;
+    background: var(--red);
     height: 60px;
     width: 100%;
     display: flex;
@@ -57,7 +76,7 @@
 }
 
 #navbar__logo {
-    background-color: #BF9B30;
+    background-color: var(--orange-gold);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -86,7 +105,7 @@
 }
 
 .navbar__menu.active {
-    background-color: #BF9B30;
+    background-color: var(--orange-gold);
     top: 60px;
     opacity: 1;
     transition: all 0.5s ease;
@@ -101,7 +120,7 @@
 }
 
 .navbar__links {
-    color: #F8F4F9;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,12 +135,13 @@
 }
 
 .navbar__links:hover {
-    color: #BF9B30;
+    color: var(--gold);
     transition: all 0.3s ease;
 }
 
 .navbar__btn {
     padding: 0 2rem 2rem;
+    background: var(--dark-blue);
     /* font-size: 1.2rem; */
 }
 
@@ -130,7 +150,7 @@
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background: #F8F4F9;
+    background: var(--white);
     display: block;
     cursor: pointer;
 }
@@ -269,19 +289,19 @@
 
 .hero button {
     /* display: flex; */
-    color: #421820;
+    color: var(--darkblue);
     padding: 2px 10px;
     border: none;
     outline: none;
     border-radius: 50px;
-    background: #F8F4F9;
+    background: var(--white);
     font-size: 0.85rem;
 }
 
 
 /*  Updates the page the user is on in the navigation bar when scrolling */
 .highlight {
-    border-bottom: 4px solid #EBA83A 
+    border-bottom: 4px solid var(--gold) 
 }
 
 /* Media Responsiveness *******************************/
@@ -293,7 +313,7 @@
 
     .hero button {
         display: flex;
-        color: #421820;
+        color: var(--darkblue);
         padding: 10px 40px;
         font-size: 1.5rem;
     }
@@ -321,7 +341,7 @@
 
     .hero button {
         display: flex;
-        color: #421820;
+        color: var(--darkblue);
         padding: 20px 50px;
         font-size: 1rem;
     }
@@ -331,9 +351,9 @@
 /*  OUR STORY SECTION ***************************************************************************************************/
 .main {
     /* background-color: #131313; */
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
+    background: var(--dark);  
+    background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--burnt-orange));  
+    background: linear-gradient(to bottom, var(--orange-gold), var(--burnt-orange)); 
     padding: 5rem 0;
 }
 
@@ -432,7 +452,7 @@
     text-decoration: none;
     margin-top: 16px;
     text-decoration: none;
-    color: #421820;
+    color: var(--darkblue);
     padding: 2px 10px;
     border: none;
     outline: none;
@@ -464,7 +484,7 @@
 
 /*  TRAVEL SECTION *******************************************************************************************************************************/
 .travel {
-    background: #421820;
+    background: var(--teal);
     padding: 5rem 0;
 }
 
@@ -502,7 +522,7 @@
     flex-direction: column;
     justify-content: center;
     color: #F8F4F9;
-    background-color: #BF9B30;
+    background-color: var(--orange);
     transition: 0.3s ease-in;
 }
 
@@ -510,9 +530,9 @@
     text-align: center;
     font-size: 1.5rem;
     /* font: 800 40px Arial; */
-    -webkit-text-fill-color: #F8F4F9;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #421820;
+    -webkit-text-fill-color: var(--white);
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: #421820; */
 }
 
 .travel__card p {
