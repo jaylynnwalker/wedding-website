@@ -6,13 +6,30 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    /* Main Colors */
+    --orange-gold: #E39102;
+    --burnt-orange: #99381F;
+    --red: #930102;
+    --dark-blue: #004177;
+    --light-blue: #4E94AB;
 
+    /* Accent Blues */
+    --navy-teal: #20576E;
+    --greenish-blue: #599F90;
+
+    /* Accent Golds */
+    --orange: #EE9322;
+    --gold: #E9B824;
+
+    --white: #F8F4F9;
+}
 
 
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
-    background: #B81822;
-    height: 80px;
+    background: var(--dark-blue);
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,18 +42,17 @@
 .navbar__container {
     display: flex; 
     justify-content: space-between; 
-    height: 80px;
+    height: 60px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     margin: 0 auto; /* top, bottom, left, right*/
-    padding: 0 50px;
+    padding: 0 15px;
 }
 
 /* Logo styling */
 #navbar__logo {
-    background-color: #EBA83A;
-    background-image: linear-gradient(to top #B81822 0%, #ffb199 100%);
+    background-color: var(--orange-gold);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -46,7 +62,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Navigation bar menu */
@@ -62,7 +78,7 @@
 
 /* Navigation link formatting */
 .navbar__links {
-    color: #F8F4F9;
+    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,8 +92,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 1rem;
+    /* padding: 0 0rem; */
     width: 100%;
+    font-size: 0.85rem;
 }
 
 .button {
@@ -85,52 +102,108 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #F8F4F9;
+    background: var(--white);
     /* background: -webkit-linear-gradient(to top, #F8F4F9, #421820);
     background: linear-gradient(to top, #F8F4F9, #421820); */
-    color: #421820;
+    color: var(--dark-blue);
     transition: all 0.3s ease;
+}
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        height: 90px;
+    }
+
+    .navbar__container {
+        height: 90px;
+        padding: 0 30px;
+    }
+
+    #navbar__logo {
+        font-size: 2.5rem;
+    }
+
+    .navbar__btn {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .navbar {
+        height: 120px;
+    }
+
+    .navbar__container {
+        height: 120px;
+        padding: 0 50px;
+    }
+
+    #navbar__logo {
+        font-size: 3.5rem;
+    }
+
+    .navbar__btn {
+        font-size: 2rem;
+    }
+
 }
 
 
 /*  HEADER SECTION ********************************************************************* */
-.video-container {
-    height: 1000px;
-    width: 100%;
-    position: relative;
+.header {
+    /* background: #421820;   */
+    background: var(--orange-gold);
+    padding: 2rem 0;
+    height: 20px;
 }
 
-.video-container video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* Just styling the content of the div, the *magic* in the previous rules */
-.video-container .caption {
-    z-index: 1;
-    position: relative;
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 100%;
     text-align: center;
-    color: #dc0000;
-    padding: 10px;
-  }
+    /* padding: 20px; */
+}
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .header {
+        height: 120px;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .header {
+        height: 150px;
+    }
+
+}
 
 
 /*  DOCUMENTS SECTION **************************************************************************************************** */
 
 .documents {
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
-    padding: 10rem 0;
+    /* background: #421820;   */
+    background: -webkit-linear-gradient(to bottom, var(--dark-blue), var(--light-blue));  
+    background: linear-gradient(to bottom, var(--dark-blue), var(--navy-teal)); 
+    /* padding: rem 0; */
 }
 
 .documents__container {
@@ -140,9 +213,9 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;  /* Makes it centered */
-    height: 90%;
+    height: 100%;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .documents img {
@@ -151,30 +224,60 @@
     width: auto\9;
     justify-content: center;
     opacity: 1;
+    padding: 20px;
 }
 
 .documents button {
-    color: #421820;
-    padding: 10px 20px;
+    color: var(--red);
+    padding: 1px 1px;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #F8F4F9;
-    font-size: 2rem;
+    background: var(--white);
+    font-size: 0.6rem;
+}
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .documents button {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .documents button {
+        font-size: 1.5rem;
+    }
+
 }
 
 /*  SUGGESTED ROUTE SECTION **************************************************************************************************** */
 
 
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
 
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+
+}
 
 
 /*  POTENTIAL ITINERARY SECTION **************************************************************************************************** */
 .travel-itinerary {
-    background: #421820;  
+    /* background: #421820;   */
     background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
-    padding: 10rem 0;
+    background: linear-gradient(to bottom, var(--orange-gold), var(--orange)); 
+    padding: 2rem 0;
 }
 
 .travel-itinerary__container {
@@ -186,7 +289,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 90%;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .travel-itinerary img {
@@ -199,20 +302,38 @@
 
 .travel-itinerary button {
     color: #421820;
-    padding: 10px 20px;
+    /* padding: 10px 0px; */
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #F8F4F9;
-    font-size: 2rem;
+    background: var(--white);
+    font-size: 0.75rem;
+}
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .travel-itinerary button {
+        font-size: 1.5rem;
+    }
+    
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .travel-itinerary button {
+        font-size: 2rem;
+    }
+
 }
 
 /*  TIPS SECTION **************************************************************************************************** */
 .travel-tips {
     background: #421820;  
     background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
-    padding: 10rem 0;
+    background: linear-gradient(to bottom, var(--light-blue), var(--greenish-blue)); 
+    padding: 1rem 0;
 }
 
 .travel-tips__container {
@@ -224,7 +345,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 90%;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .travel-tips img {
@@ -235,7 +356,115 @@
     opacity: 1;
 }
 
+.travel-tips button {
+    /* padding: 10px 0px; */
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--white);
+    font-size: 0.75rem;
+    margin: 15px;
+} 
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .travel-tips button {
+        font-size: 1rem;
+    } 
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .travel-tips button {
+        font-size: 1.5rem;
+    } 
+
+}
+
 /*  UPON ARRIVAL SECTION **************************************************************************************************** */
 
 
 
+/*  FOOTER SECTION **************************************************************************************************************/
+.footer__container {
+    background-color: var(--dark-blue);
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+    text-align: center;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2{
+    margin-bottom: 16px;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.footer__link--items a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer__link--items a:hover {
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.website__rights {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+} 
+
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+    .footer__link--items h2 {
+        font-size: 2rem;
+    }
+
+    .footer__link--items a {
+        font-size: 1.5rem;
+    }
+
+    
+} 
+    
+@media only screen and (min-width: 1000px) {
+  
+    .footer__link--items h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer__link--items a {
+        font-size: 2rem;
+    }
+    
+}  */

@@ -7,7 +7,24 @@
 }
 
 
+:root {
+    /* Main Colors */
+    --orange-gold: #E39102;
+    --burnt-orange: #99381F;
+    --red: #930102;
+    --dark-blue: #004177;
+    --light-blue: #4E94AB;
 
+    /* Accent Blues */
+    --navy-teal: #20576E;
+    --greenish-blue: #599F90;
+
+    /* Accent Golds */
+    --orange: #EE9322;
+    --gold: #E9B824;
+
+    --white: #F8F4F9;
+}
 
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
 .navbar {
