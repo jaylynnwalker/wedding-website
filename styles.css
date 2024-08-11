@@ -233,22 +233,26 @@
 
     .navbar__menu ul {
         justify-content: flex-end;
-        margin: 0;
-        padding: 0;
+        /* margin: 0;
+        padding: 0; */
         display: flex;
     }
 
     .navbar__menu {
         display: flex;
         justify-content: space-around;
-        align-items: end;
+        align-items: center;
         list-style: none;
         text-align: center;
         width: 100%;
         position: static;
-        padding: 0;
-        margin: 0;
+        /* padding: 0;
+        margin: 0; */
         flex-grow: 1;
+    }
+
+    .navbar__btn {
+        margin-left: 50px;
     }
 
     .navbar__item {
@@ -309,6 +313,11 @@
     font-size: 0.85rem;
 }
 
+.hero button:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
 
 /*  Updates the page the user is on in the navigation bar when scrolling */
 .highlight {
@@ -474,6 +483,12 @@
     font-size: 0.8rem;
 }
 
+.itinerary button:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
 .events__btn {
     padding: 1px 1px;
 }
@@ -549,6 +564,7 @@
 .travel__card h2 {
     text-align: center;
     font-size: 1.5rem;
+    font-weight: 500;
     margin-top: 20px;
     /* font: 800 40px Arial; */
     -webkit-text-fill-color: var(--white);
@@ -558,8 +574,9 @@
 
 .travel__card p {
     text-align: center;
-    margin-top: 10px;
+    /* margin-top: 1px; */
     font-size: 15px;
+    font-weight: 200;
 }
 
 .travel__btn {
@@ -614,7 +631,7 @@
     }
 } 
     
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
         
     .travel__wrapper {
         display: grid;
@@ -624,7 +641,7 @@
 
     .travel__card {
         margin: 15px;
-        height: 250px;
+        height: 275px;
         width: 450px;
     }
 
@@ -633,6 +650,11 @@
     }
 
     .travel__card p {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .travel__card button {
         font-size: 1.5rem;
     }
 
