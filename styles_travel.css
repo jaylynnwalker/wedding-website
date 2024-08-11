@@ -256,7 +256,61 @@
 }
 
 /*  SUGGESTED ROUTE SECTION **************************************************************************************************** */
+.flights {
+    /* background: #421820;   */
+    background: -webkit-linear-gradient(to bottom, var(--orange), var(--orange-gold));  
+    background: linear-gradient(to bottom, var(--navy-teal), var(--light-blue), var(--white)); 
+    /* padding: rem 0; */
+}
 
+.flights__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.flights img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+    padding: 20px;
+}
+
+.flights button {
+    color: var(--dark-blue);
+    padding: 1px 1px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--dark-blue);
+    font-size: 0.75rem;
+}
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .documents button {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .documents button {
+        font-size: 2rem;
+    }
+
+}
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
 @media only screen and (min-width: 768px) {
@@ -276,7 +330,7 @@
 .travel-itinerary {
     /* background: #421820;   */
     background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, var(--orange-gold), var(--orange)); 
+    background: linear-gradient(to bottom, var(--white), var(--orange),var(--orange-gold)); 
     padding: 2rem 0;
 }
 
@@ -384,7 +438,60 @@
 }
 
 /*  UPON ARRIVAL SECTION **************************************************************************************************** */
+.arrival {
+    background: #421820;  
+    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
+    background: linear-gradient(to bottom, var(--greenish-blue), var(--dark-blue)); 
+    padding: 1rem 0;
+}
 
+.arrival__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 10px;
+}
+
+.arrival img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
+
+.arrival button {
+    /* padding: 10px 0px; */
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--white);
+    color: var(--dark-blue);
+    font-size: 0.75rem;
+    margin: 15px;
+} 
+
+/* MEDIA RESPONSIVENESS ******************************************************************************** */
+@media only screen and (min-width: 768px) {
+
+    .travel-tips button {
+        font-size: 1rem;
+    } 
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .travel-tips button {
+        font-size: 1.5rem;
+    } 
+
+}
 
 
 /*  FOOTER SECTION **************************************************************************************************************/
