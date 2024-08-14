@@ -101,7 +101,7 @@
     /* opacity: 0;  */
     transition: all 0.5s ease;
     z-index: -1;
-    height: calc(90vh - 60px);
+    height: calc(900px - 60px);
     overflow-y: auto;
 }
 
@@ -111,7 +111,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: calc(90vh - 60px); 
+    height: calc(900px - 60px); 
     font-size: 1.6rem;
     overflow-y: auto;
 }
