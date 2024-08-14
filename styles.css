@@ -95,12 +95,14 @@
     grid-template-columns: auto;
     margin: 0;
     width: 100%;
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: -1000px;
     /* opacity: 0;  */
     transition: all 0.5s ease;
     z-index: -1;
+    height: calc(90vh - 60px);
+    overflow-y: auto;
 }
 
 .navbar__menu.active {
@@ -109,7 +111,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh; 
+    height: calc(90vh - 60px); 
     font-size: 1.6rem;
 }
 
@@ -706,10 +708,10 @@
 
 .faq__content label {
     display: block;
-    padding: 5px;
+    padding: 3px;
     cursor: pointer;
     background-color: var(--orange-gold);
-    font-size: 1rem;
+    font-size: 0.75rem;
     color: #F8F4F9;
 }
 
@@ -731,7 +733,7 @@
 
 .answer p {
     margin: 10px 0;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .faq__content input:checked ~ .answer {
