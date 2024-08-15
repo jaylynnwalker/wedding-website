@@ -177,6 +177,13 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
+  @supports (-webkit-touch-callout: none) {
+    /* Safari-specific CSS */
+    .navbar__menu.active {
+        height: calc(100vh - 60px);
+    }
+}
+
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
 @media only screen and (min-width: 768px) {
     .navbar {
