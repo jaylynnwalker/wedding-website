@@ -95,6 +95,7 @@
     /* padding: 0 0rem; */
     width: 100%;
     font-size: 0.85rem;
+    font-weight: 400;
 }
 
 .button {
@@ -102,7 +103,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 6px 10px;
     height: 100%;
     width: 100%;
     border: none;
@@ -137,7 +138,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
 
     .navbar {
         height: 120px;
@@ -153,7 +154,7 @@
     }
 
     .navbar__btn {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
 }
@@ -161,10 +162,12 @@
 
 /*  HEADER SECTION ********************************************************************* */
 .header {
-    /* background: #421820;   */
-    background: var(--orange-gold);
+    /* background: var(--orange-gold); */
+    background-image: url(images/proposal-110.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 2rem 0;
-    height: 20px;
+    height: 180px;
 }
 
 .header__container {
@@ -183,7 +186,7 @@
 @media only screen and (min-width: 768px) {
 
     .header {
-        height: 120px;
+        height: 400px;
     }
 
 }
@@ -191,7 +194,7 @@
 @media only screen and (min-width: 1000px) {
 
     .header {
-        height: 150px;
+        height: 550px;
     }
 
 }
@@ -224,7 +227,7 @@
     width: auto\9;
     justify-content: center;
     opacity: 1;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .documents button {
@@ -235,6 +238,7 @@
     border-radius: 4px;
     background: var(--white);
     font-size: 0.6rem;
+    font-weight: 400;
 }
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
@@ -272,7 +276,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .flights img {
@@ -292,6 +296,7 @@
     border-radius: 4px;
     background: var(--dark-blue);
     font-size: 0.75rem;
+    font-weight: 400;
 }
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
@@ -343,7 +348,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 90%;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .travel-itinerary img {
@@ -399,7 +404,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 90%;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0px;
 }
 
 .travel-tips img {
@@ -417,6 +422,7 @@
     border-radius: 4px;
     background: var(--white);
     font-size: 0.75rem;
+    font-weight: 400;
     margin: 15px;
 } 
 
@@ -454,7 +460,7 @@
     margin: 0 auto;  /* Makes it centered */
     height: 90%;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
 }
 
 .arrival img {
@@ -465,10 +471,10 @@
     opacity: 1;
 }
 
-.arrival button {t-distribution> | <overflow-position>? [ <content-position> | left | right ]
+/* .arrival button {t-distribution> | <overflow-position>? [ <content-position> | left | right ]
 
 MDN Reference
-    /* padding: 10px 0px; */
+    padding: 10px 0px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -476,7 +482,7 @@ MDN Reference
     color: var(--dark-blue);
     font-size: 0.75rem;
     margin: 15px;
-} 
+}  */
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
 @media only screen and (min-width: 768px) {
@@ -498,82 +504,112 @@ MDN Reference
 
 /*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__col ul{
+    list-style: none;
+}
+
+.footer {
     background-color: var(--dark-blue);
-    padding: 5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 70px 0;
 }
 
-.footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
+.footer__col {
+     width: 50%;
+     padding: 0 15px;
 }
 
-.footer__link--wrapper {
-    display: flex;
-}
-
-.footer__link--items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px;
-    text-align: center;
-    width: 160px;
-    box-sizing: border-box;
-}
-
-.footer__link--items h2{
-    margin-bottom: 16px;
+.footer__col h4{
+    font-size: 18px;
     color: var(--white);
-    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
 }
 
-.footer__link--items a {
+.footer__col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: var(--orange-gold);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer__col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer__col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
     color: var(--white);
     text-decoration: none;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-weight: 300;
+    color: var(--white);
+    display: block;
+    transition: all 0.3s ease;
 }
 
-.footer__link--items a:hover {
-    color: var(--white);
-    transition: 0.3s ease-in-out;
+.footer__col ul li a:hover{
+    color: var(--burnt-orange);
+    padding-left: 8px;
 }
+
 
 .website__rights {
     background-color: var(--dark-blue);
     color: var(--white);
     display: flex;
     justify-content: center;
+    padding-top: 50px;
+    /* padding-bottom: 0px; */
 } 
+
+.footer p {
+    font-size: 0.4rem;
+}
+
 
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
 
-    .footer__link--items h2 {
+    .footer__col h4{
         font-size: 2rem;
     }
-
-    .footer__link--items a {
+    
+    .footer__col ul li a{
         font-size: 1.5rem;
     }
 
-    
+    .footer p {
+        font-size: 1rem;
+    }
 } 
     
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px) {
   
-    .footer__link--items h2 {
-        font-size: 2.5rem;
-    }
-
-    .footer__link--items a {
+    .footer__col h4{
         font-size: 2rem;
     }
     
-}  */
+    .footer__col ul li a{
+        font-size: 1.5rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+    
+} 
