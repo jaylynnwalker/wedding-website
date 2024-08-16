@@ -76,3 +76,7 @@ const hideMobileMenu = () => {
 }
 menuLinks.addEventListener('click', hideMobileMenu);
 navLogo.addEventListener('click', hideMobileMenu);
+
+if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+    document.querySelector('.navbar__menu.active').style.height = `calc(${window.innerHeight}px - 60px)`;
+}
