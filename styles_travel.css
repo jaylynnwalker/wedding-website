@@ -295,8 +295,8 @@
     outline: none;
     border-radius: 4px;
     background: var(--dark-blue);
-    font-size: 0.75rem;
-    font-weight: 400;
+    font-size: 0.6rem;
+    font-weight: 300;
 }
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
@@ -415,15 +415,27 @@
     opacity: 1;
 }
 
-.travel-tips button {
+.travel-tips1__btn {
     /* padding: 10px 0px; */
     border: none;
     outline: none;
     border-radius: 4px;
     background: var(--white);
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: 400;
-    margin: 15px;
+    margin: 5px;
+} 
+
+.travel-tips2__btn {
+    /* padding: 10px 0px; */
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: var(--white);
+    font-size: 0.6rem;
+    font-weight: 400;
+    margin: 10px;
+    margin-bottom: 40px;
 } 
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
