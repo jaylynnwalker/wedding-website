@@ -805,7 +805,7 @@
     text-transform: capitalize;
     margin-bottom: 25px;
     font-weight: 500;
-    /* position: relative; */
+    position: relative;
 }
 
 .footer__col h4::before{
