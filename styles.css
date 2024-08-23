@@ -53,7 +53,7 @@
 /*  NAVIGATION BAR SECTION **************************************************************************************************************/
   .navbar {
     background: var(--red);
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@
 }
 
 .navbar__logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--orange-gold);
 }
@@ -79,10 +79,10 @@
 }
 
 .navbar__toggle .bar {
-    width: 25px;
+    width: 35px;
     height: 3px;
     background: var(--white);
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 /* Off-Canvas Menu (visible on small screens) */
