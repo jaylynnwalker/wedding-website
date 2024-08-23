@@ -194,7 +194,7 @@
 @media only screen and (min-width: 1000px) {
 
     .header {
-        height: 550px;
+        height: 650px;
     }
 
 }
@@ -410,6 +410,7 @@
     width: auto\9;
     justify-content: center;
     opacity: 1;
+    margin-bottom: 40px;
 }
 
 .travel-tips1__btn {
@@ -432,7 +433,7 @@
     font-size: 0.6rem;
     font-weight: 400;
     margin: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 } 
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
