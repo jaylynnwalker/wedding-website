@@ -134,7 +134,7 @@
 }
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1049px) {
     .navbar__toggle {
         display: block; /* Show toggle button on small screens */
     }
@@ -145,7 +145,7 @@
 }
 
 /* Media Query: Show the horizontal menu on large screens */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1050px) {
     .navbar__menu {
         display: flex; /* Show the horizontal menu on larger screens */
     }
@@ -394,7 +394,7 @@
     
 } 
     
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
     
     .itinerary {
         padding: 200px 300px;
@@ -572,7 +572,7 @@
 }
 
 .faq__container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -580,6 +580,7 @@
     max-width: 100%;
     height: auto;
     width: auto\9;
+    justify-content: center;
     opacity: 1;
 }
 

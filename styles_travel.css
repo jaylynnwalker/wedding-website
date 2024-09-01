@@ -191,7 +191,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
     .header {
         height: 650px;
@@ -251,7 +251,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
     .documents {
         padding: 100px 300px;
@@ -312,7 +312,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
     .flights {
         padding: 50px 300px;
@@ -372,7 +372,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
     .travel-itinerary {
         padding: 50px 300px;
@@ -440,19 +440,19 @@
 @media only screen and (min-width: 768px) {
 
     .travel-tips button {
-        font-size: 1rem;
+        font-size: 1.2rem;
     } 
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
     .travel-tips {
         padding: 50px 300px;
     }
 
     .travel-tips button {
-        font-size: 1rem;
+        font-size: 1.2rem;
     } 
 
 }
@@ -492,7 +492,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 
 .arrival {
     padding: 50px 300px;
