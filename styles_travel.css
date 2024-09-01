@@ -353,13 +353,14 @@
 }
 
 .travel-itinerary button {
-    color: #421820;
+    /* color: #421820; */
     /* padding: 10px 0px; */
     border: none;
     outline: none;
     border-radius: 4px;
     background: var(--white);
     font-size: 0.75rem;
+    margin-top: 50px;
 }
 
 /* MEDIA RESPONSIVENESS ******************************************************************************** */
