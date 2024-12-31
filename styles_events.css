@@ -166,9 +166,9 @@
 /*  COOKOUT SECTION **************************************************************************************************** */
 
 .cookout {
-    background: var(--gold);  
-    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820);  */
+    background: var(--orange-gold);  
+    background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
+    background: linear-gradient(to bottom, var(--orange-gold), var(--gold)); 
     padding: 10rem 0;
 }
 
@@ -196,9 +196,9 @@
 /*  HALDI SECTION **************************************************************************************************** */
 
 .haldi {
-    background: #BF9B30;  
-    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);   */
-    /* background: linear-gradient(to bottom, #B81822, #421820);  */
+    background: var(--orange-gold);  
+    background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
+    background: linear-gradient(to bottom, var(--gold), var(--burnt-orange)); 
     padding: 10rem 0;
 }
 
@@ -222,27 +222,17 @@
     opacity: 1;
 }
 
-.haldi button {
-    color: #421820;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #F8F4F9;
-    font-size: 2rem;
-}
-
 
 
 /*  MEHNDI/GARBA SECTION **************************************************************************************************** */
-.mehndi {
-    background: #BF9B30;  
-    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);   */
-    /* background: linear-gradient(to bottom, #B81822, #421820);  */
+.garba {
+    /* background: var(--orange-gold);  
+    background: -webkit-linear-gradient(to bottom, var(--burnt-orange), var(--orange));   */
+    background: linear-gradient(to bottom, var(--burnt-orange), var(--orange)); 
     padding: 10rem 0;
 }
 
-.mehndi__container {
+.garba__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,7 +244,7 @@
     padding: 30px;
 }
 
-.mehndi img {
+.garba img {
     max-width: 100%;
     height: auto;
     width: auto\9;
@@ -263,14 +253,14 @@
 }
 
 /*  WEDDING CEREMONY SECTION **************************************************************************************************** */
-.travel-tips {
-    background: #421820;  
-    background: -webkit-linear-gradient(to bottom, #B81822, #421820);  
-    background: linear-gradient(to bottom, #B81822, #421820); 
+.ceremony {
+    background: var(--orange-gold);  
+    background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
+    background: linear-gradient(to bottom, var(--orange), var(--gold)); 
     padding: 10rem 0;
 }
 
-.travel-tips__container {
+.ceremony__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,7 +272,7 @@
     padding: 30px;
 }
 
-.travel-tips img {
+.ceremony img {
     max-width: 100%;
     height: auto;
     width: auto\9;
@@ -291,9 +281,34 @@
 }
 
 /*  WHITE PARTY SECTION **************************************************************************************************** */
+.whiteparty {
+    background: var(--orange-gold);  
+    /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);  */
+    background: linear-gradient(to bottom, var(--gold), var(--burnt-orange)); 
+    padding: 10rem 0;
+}
+
+.whiteparty__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;  /* Makes it centered */
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+}
+
+.whiteparty img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    justify-content: center;
+    opacity: 1;
+}
 
 
-/*  WEDDING CEREMONY SECTION **************************************************************************************************** */
 
 
 /*  FOOTER SECTION **************************************************************************************************************/
