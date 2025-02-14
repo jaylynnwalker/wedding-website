@@ -217,6 +217,14 @@
     border-bottom: 4px solid var(--orange-gold) 
 }
 
+#countdown {
+    font-size: 3rem;
+    color: var(--gold);
+    text-shadow: 0 0 10px var(--burnt-orange), 0 0 20px var(--burnt-orange);
+    margin-bottom: 20px;
+} 
+
+
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
     .hero {
