@@ -290,11 +290,11 @@ th, td {
 
 th {
     background-color: var(--orange-gold);
-    font-size: 16px;
+    font-size: 0.75rem;
 }
 
 td {
-    font-size: 20px;
+    font-size: 0.6rem;
 }
 
 caption {
@@ -307,13 +307,13 @@ caption {
     margin-left: 20px; /* Moves each bullet further right */
     margin-bottom: 15px;
     color: var(--white);
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .hero h3 {
     color: var(--white);
     text-align: center;
-    font-size: 1.75rem;
+    font-size: 1rem;
 }
 
 .hero p {
@@ -336,6 +336,10 @@ caption {
         padding: 30px;
         width: 70%;
  
+    }
+
+    .hero ul li {
+        font-size: 2rem;
     }
 
 } 
