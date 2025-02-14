@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Tenor Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -160,8 +160,128 @@
 }
 
 
-/*  PAGE SUMMARY **************************************************************************************************** */
+/* GENERAL ******************************************************************************/
 
+h1 {
+    font-size: 40px;
+    color: var(--white);
+    text-align: left;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--white);
+    margin-bottom: 20px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+p {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 100%;
+}
+
+.event__btn {
+
+ 
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    p {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+} 
+
+@media only screen and (min-width: 1100px) {
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    
+    p {
+        font-size: 25px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+} 
+
+/*  PAGE SUMMARY **************************************************************************************************** */
+.hero {
+
+
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;  
+    height: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+
+.hero button {
+
+}
+
+
+
+.hero ul li {
+    margin-left: 20px; /* Moves each bullet further right */
+}
+
+
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+
+} 
+
+@media only screen and (min-width: 1100px) {
+
+
+} 
 
 /*  COOKOUT SECTION **************************************************************************************************** */
 
@@ -169,29 +289,46 @@
     background: var(--orange-gold);  
     background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
     background: linear-gradient(to bottom, var(--orange-gold), var(--gold)); 
-    padding: 10rem 0;
+    padding: 20px 0;
 }
 
 .cookout__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
 }
 
-.cookout img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    justify-content: center;
-    opacity: 1;
+.cookout button{
+    background-color: var(--burnt-orange);
 }
 
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+    .cookout {
+        
+        
+    }
+
+    .cookout__container {
+        padding: 30px;
+        width: 85%;
+ 
+    }
+} 
+
+@media only screen and (min-width: 1100px) {
+    .cookout {
+        
+    }
+
+    .cookout__container {
+        padding: 30px;
+        width: 50%;
+ 
+    }
+
+} 
 
 /*  HALDI SECTION **************************************************************************************************** */
 
@@ -199,29 +336,42 @@
     background: var(--orange-gold);  
     background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
     background: linear-gradient(to bottom, var(--gold), var(--burnt-orange)); 
-    padding: 10rem 0;
+    padding: 20px 0;
 }
 
 .haldi__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
 }
 
-.haldi img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    justify-content: center;
-    opacity: 1;
-}
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+    .haldi {
+        
+        
+    }
 
+    .haldi__container {
+        padding: 30px;
+        width: 85%;
+ 
+    }
+} 
+
+@media only screen and (min-width: 1100px) {
+    .haldi {
+        
+    }
+
+    .haldi__container {
+        padding: 30px;
+        width: 50%;
+ 
+    }
+
+} 
 
 
 /*  MEHNDI/GARBA SECTION **************************************************************************************************** */
@@ -229,87 +379,126 @@
     /* background: var(--orange-gold);  
     background: -webkit-linear-gradient(to bottom, var(--burnt-orange), var(--orange));   */
     background: linear-gradient(to bottom, var(--burnt-orange), var(--orange)); 
-    padding: 10rem 0;
+    padding: 20px 0;
 }
 
 .garba__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
 }
 
-.garba img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    justify-content: center;
-    opacity: 1;
-}
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+    .garba {
+        
+        
+    }
+
+    .garba__container {
+        padding: 30px;
+        width: 85%;
+ 
+    }
+} 
+
+@media only screen and (min-width: 1100px) {
+    .garba {
+        
+    }
+
+    .garba__container {
+        padding: 30px;
+        width: 50%;
+ 
+    }
+
+} 
 
 /*  WEDDING CEREMONY SECTION **************************************************************************************************** */
 .ceremony {
     background: var(--orange-gold);  
     background: -webkit-linear-gradient(to bottom, var(--orange-gold), var(--light-blue));  
     background: linear-gradient(to bottom, var(--orange), var(--gold)); 
-    padding: 10rem 0;
+    padding: 20px 0;
 }
 
 .ceremony__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
 }
 
-.ceremony img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    justify-content: center;
-    opacity: 1;
-}
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+    .ceremony {
+        
+        
+    }
+
+    .ceremony__container {
+        padding: 30px;
+        width: 85%;
+ 
+    }
+} 
+
+@media only screen and (min-width: 1100px) {
+    .ceremony {
+        
+    }
+
+    .ceremony__container {
+        padding: 30px;
+        width: 50%;
+ 
+    }
+
+} 
 
 /*  WHITE PARTY SECTION **************************************************************************************************** */
 .whiteparty {
     background: var(--orange-gold);  
     /* background: -webkit-linear-gradient(to bottom, #B81822, #421820);  */
     background: linear-gradient(to bottom, var(--gold), var(--burnt-orange)); 
-    padding: 10rem 0;
+    padding: 20px 0;
 }
 
 .whiteparty__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;  /* Makes it centered */
-    height: 90%;
-    text-align: center;
-    padding: 30px;
+    width: 95%;
+    padding: 15px;
+    margin: auto;
 }
 
-.whiteparty img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    justify-content: center;
-    opacity: 1;
-}
+/* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+    .whiteparty {
+        
+        
+    }
 
+    .whiteparty__container {
+        padding: 30px;
+        width: 85%;
+ 
+    }
+} 
 
+@media only screen and (min-width: 1100px) {
+    .whiteparty {
+        
+    }
 
+    .whiteparty__container {
+        padding: 30px;
+        width: 50%;
+ 
+    }
+
+} 
 
 /*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
@@ -421,4 +610,3 @@
         font-size: 1rem;
     }
     
-} 
