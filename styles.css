@@ -218,7 +218,7 @@
 }
 
 #countdown {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--gold);
     text-shadow: 0 0 10px var(--burnt-orange), 0 0 20px var(--burnt-orange);
     margin-bottom: 25px;
@@ -268,7 +268,7 @@
     }
 
     #countdown {
-
+        font-size: 3rem;
     } 
 
 } 
