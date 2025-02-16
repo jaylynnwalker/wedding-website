@@ -253,6 +253,10 @@ p {
         margin-left: 10px;
         margin-bottom: 15px;
     }
+
+    .pinterest-widget {
+        max-width: 100%;
+    }
 } 
 
 /*  PAGE SUMMARY **************************************************************************************************** */
@@ -323,6 +327,10 @@ caption {
     text-align: center;
     font-size: 0.75rem;
     font-weight: 600;
+}
+
+hero h2 {
+    font-size: 0.6rem;
 }
 
 .hero p {
