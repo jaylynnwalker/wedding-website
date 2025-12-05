@@ -65,7 +65,7 @@
     align-items: center;
     cursor: pointer;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 /* Navigation bar menu */
@@ -97,7 +97,7 @@
     align-items: center;
     /* padding: 0 0rem; */
     width: 100%;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 400;
     
 }
@@ -194,23 +194,8 @@ p {
     width: 100%;
 }
 
-/* .event__btn {
-    display: block;
-    color: var(--white); /*text color 
-    background-color: var(--navy-teal);
-    text-decoration: none;
-    outline: none;
-    border: none;
-    padding: 0px 10px;
-    font-size: 1.2rem;
-    border-radius: 4px;
-    margin: 20px auto;
- 
-} */
 
-.pinterest-widget {
-    justify-content: center;
-}
+
 
 @media only screen and (min-width: 768px) {
     h1 {
@@ -257,19 +242,17 @@ p {
         margin-bottom: 15px;
     }
 
-    .pinterest-widget {
-        max-width: 100%;
-    }
+
 } 
 
 /*  PAGE SUMMARY **************************************************************************************************** */
 .hero {
-    background-image: url(images/archive\ background.png);
+    background-image: url(images/archive\ hero.png);
     background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    background-repeat: no-repeat;
     /* background-attachment: fixed; */
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--pink-tan);
     /* background-blend-mode: lighten; */
     padding: 20px 0;
 
@@ -280,21 +263,40 @@ p {
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    width: 90%;
+    width: 80%;
     margin: auto;  
     text-align: left;
     padding: 10px;
 
 }
 
+.hero h1 {
+    color: var(--dark-green);
+    text-align: center;
+    font-size: 1.5rem;
+}
 
+.hero h2 {
+    color: var(--pink-brown);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.hero p {
+    color: var(--pink-brown);
+    font-size: 0.75rem;
+}
 
 /* Media Responsiveness *******************************/
 @media only screen and (min-width: 768px) {
 
+    .hero {
+    background-size: cover;
+    }
+
     .hero__container {
         padding: 30px;
-        width: 65%;
+        width: 75%;
  
     }
 
@@ -318,6 +320,10 @@ p {
 } 
 
 @media only screen and (min-width: 1100px) {
+    .hero {
+    background-size: cover;
+    }
+    
     .hero__container {
         padding: 30px;
         width: 70%;
@@ -336,19 +342,198 @@ p {
         font-size: 1rem;
     }
 
-
-
 } 
 
-/*  COOKOUT SECTION **************************************************************************************************** */
+/*  ARCHIVE SECTION **************************************************************************************************************/
 
+.archive {
+    background: var(--green);
+    padding: 5rem 0;
+}
 
+.archive__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto; 
+    height: 90%;
+    width: 100%;
+} 
+
+.archive__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+}
+
+.archive__card {
+    margin: 20px;
+    height: 175px;
+    width: 325px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    color: var(--pink-brown);
+    background-color: var(--pink-tan);
+    transition: 0.3s ease-in;
+}
+
+.archive__card h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 20px;
+    /* font: 800 40px Arial; */
+    -webkit-text-fill-color: var(--green);
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-stroke-color: #421820; */
+}
+
+.archive__card p {
+    text-align: center;
+    /* margin-top: 1px; */
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.archive__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    text-decoration: none;
+    width: 325px;
+}
+
+.archive__card a {
+    text-decoration: none;
+}
+
+.archive__card button {
+    color: var(--pink-tan);
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: var(--peacock-blue);
+    font-size: 1rem;
+}
+
+.archive__card button:hover {
+    cursor: pointer;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.archive__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
 
 
 /* Media Responsiveness *******************************/
+@media only screen and (min-width: 768px) {
+
+    .archive {
+    background-size: cover;
+    }
+
+    .archive__container {
+        padding: 30px;
+        width: 75%;
+ 
+    }
+
+    .archive h1 {
+        color: var(--dark-green);
+        text-align: center;
+        font-size: 3.25rem;
+    }
+
+    .archive h2 {
+        color: var(--pink-brown);
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    
+    .archive p {
+        font-size: 1.25rem;
+    }
+
+    .archive__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }
+
+    .archive__card {
+        margin: 10px;
+        height: 175px;
+        width: 500px;
+    }
+
+} 
+
+@media only screen and (min-width: 1100px) {
+    .archive {
+    background-size: cover;
+    }
+    
+    .archive__container {
+        padding: 30px;
+        width: 70%;
+ 
+    }
+
+    .archive h1 {
+        color: var(--white);
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .archive h2 {
+        color: var(--white);
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .archive__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+    }  
+
+    .archive__card {
+        margin: 15px;
+        height: 275px;
+        width: 450px;
+    }
+
+    .archive__card h2 {
+        font-size: 2rem;
+    }
+
+    .archive__card p {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .archive__card button {
+        font-size: 1.5rem;
+    }
+
+    .archive__btn {
+        margin-top: 10px;
+        width: 450px;
+    }
 
 
-
+} 
 
 /*  FOOTER SECTION **************************************************************************************************************/
 .footer__container {
