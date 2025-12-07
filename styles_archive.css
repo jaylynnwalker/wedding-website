@@ -428,7 +428,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10px; 
+    margin: 0 auto 15px; 
     text-decoration: none;
     width: 200px;
 }
@@ -449,8 +449,8 @@ p {
 
 .archive__card button:hover {
     cursor: pointer;
-    background-color: var(--dark-blue);
-    color: var(--white);
+    background-color: var(--green);
+    color: var(--orange-tan);
 }
 
 .archive__card:hover {
